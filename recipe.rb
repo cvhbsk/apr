@@ -25,7 +25,7 @@ class Apr < FPM::Cookery::Recipe
     configure \
       '--prefix=/usr/local/apr',
       '--with-apr=/usr/bin',
-      "--with-java-home=/usr/java/jdk#$jdk_version",
+      "--with-java-home=/usr/lib/jvm/java-8-openjdk-amd64",
       "--with-ssl=yes"
     make
   end
