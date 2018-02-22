@@ -12,7 +12,7 @@ class Apr < FPM::Cookery::Recipe
   source        "http://archive.apache.org/dist/tomcat/tomcat-#$tomcat_major_version/v#$tomcat_version/bin/apache-tomcat-#$tomcat_version.tar.gz"
   md5           '2d2278cf1126bc7443ba0d80324ba574'
   arch          'x86_64'
-  build_depends 'libapr1-dev', "openjdk-8-jdk", 'openssl', 'libssl-dev'
+  build_depends 'libapr1-dev', "openjdk-8-jdk", 'libssl-dev'
 
   def extract
     cmd = "tar -xzf ./bin/tomcat-native.tar.gz > /dev/null 2>&1"
