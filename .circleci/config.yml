@@ -5,27 +5,14 @@ jobs:
         - image: circleci/ruby:2.4.1-node-browsers
 
     steps:
+        - run: apt-get install -y sudo
         - checkout
         - run:
             name: Install fpm-cookery
             command: gem install fpm-cookery
-        - run: apt-get install -y sudo
         - run:
             name: Install build dependencies
             command: sudo fpm-cook install-deps
         - run:
             name: Build RPM
             command: fpm-cook
-
-#      - run:
-#          name: install fpm-cookery
-#          command: |
-#            gem install fpm-cookery
-#            sudo fdisk -l
-#
-#      # collect reports
-#      - store_test_results:
-#          path: /tmp/test-results
-#      - store_artifacts:
-#          path: /tmp/test-results
-#          destination: test-results
