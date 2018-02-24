@@ -8,14 +8,11 @@ jobs:
     steps:
         - run: 
             name: Install required dependencies
-            command: apt update && apt-get install git ruby ruby-dev libffi-dev make gcc -y
-        - run:
-            name: Check Ruby version
-            command: ruby -v
+            command: apt update && apt-get install git ruby ruby-dev libffi-dev make gcc curl -y
         - checkout
         - run:
             name: Install fpm-cookery
-            command: gem install fpm-cookery
+            command: gem install fpm-cookery --no-ri --no-rdoc
         - run:
             name: Install build dependencies
             command: fpm-cook install-deps
