@@ -5,6 +5,8 @@ jobs:
        - circleci/classic:latest
 
     steps:
+        - run:
+            command: ls
 #      - checkout
 #
 #      - run:
