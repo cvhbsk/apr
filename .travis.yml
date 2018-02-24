@@ -4,7 +4,7 @@ sudo: enabled
 
 before_install:
     - gem install fpm-cookery
-    - sudo fpm-cook install-deps
+    - fpm-cook install-deps
 
 install:
     - fpm-cook
