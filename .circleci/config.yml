@@ -6,9 +6,9 @@ jobs:
         - image: ubuntu        
 
     steps:
-        - run: 
-            name: Install required dependencies
-            command: apt-get install libapr1-dev libssl-dev -y
+#        - run: 
+#            name: Install required dependencies
+#            command: apt-get install libapr1-dev libssl-dev -y
         - checkout
         - run:
             name: Install fpm-cookery
