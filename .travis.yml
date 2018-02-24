@@ -1,3 +1,6 @@
 language: ruby
 
+rvm:
+    - fpm-cookery
+
 install: gem install fpm-cookery
