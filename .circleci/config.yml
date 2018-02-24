@@ -1,12 +1,13 @@
 version: 2
 jobs:
   build:
-    machine:
-       - image: circleci/classic:latest
+    docker:
+        - image: circleci/ruby:2.4.1-node-browsers
 
     steps:
         - run:
             command: ls
+
 #      - checkout
 #
 #      - run:
