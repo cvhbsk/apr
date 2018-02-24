@@ -11,7 +11,7 @@ jobs:
             command: gem install fpm-cookery
         - run:
             name: Install build dependencies
-            command: sudo fpm-cook install-deps
+            command: fpm-cook install-deps
         - run:
             name: Build RPM
             command: fpm-cook
