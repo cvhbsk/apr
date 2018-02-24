@@ -1,7 +1,8 @@
 language: ruby
 
-sudo: required
+sudo: true
 dist: precise
+paranoid_mode: false
 
 before_install:
     - gem install fpm-cookery
