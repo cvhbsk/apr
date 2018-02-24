@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
 #        - image: circleci/ruby:2.4.1-node-browsers
-        - image: cvhbsk/ubuntu-custom        
+        - image: ubuntu        
 
     steps:
         - run: 
