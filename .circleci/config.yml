@@ -8,11 +8,11 @@ jobs:
     steps:
         - run: 
             name: Install required dependencies
-            command: apt update && apt-get install git ruby -y
+            command: apt update && apt-get install git ruby libffi-dev -y
         - checkout
         - run:
             name: Install fpm-cookery
-            command: gem install ffi fpm-cookery
+            command: gem install fpm-cookery
         - run:
             name: Install build dependencies
             command: sudo fpm-cook install-deps
