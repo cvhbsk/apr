@@ -1,1 +1,3 @@
 language: ruby
+
+install: fpm-cookery
