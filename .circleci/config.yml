@@ -9,6 +9,9 @@ jobs:
         - run:
             name: Install fpm-cookery
             command: gem install fpm-cookery
+        - run:
+            name: Build RPM
+            command: fpm-cook
 
 
 #      - run:
