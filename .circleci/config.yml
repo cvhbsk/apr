@@ -8,7 +8,7 @@ jobs:
     steps:
         - run: 
             name: Install required dependencies
-            command: apt-get install git -y
+            command: apt update && apt-get install git -y
         - checkout
         - run:
             name: Install fpm-cookery
