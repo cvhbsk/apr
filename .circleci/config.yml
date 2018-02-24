@@ -2,7 +2,8 @@ version: 2
 jobs:
   build:
     docker:
-        - image: circleci/ruby:2.4.1-node-browsers
+#        - image: circleci/ruby:2.4.1-node-browsers
+        - image: cvhbsk/ubuntu-custom        
 
     steps:
         - run: apt-get install libapr1-dev openjdk-8-jdk libssl-dev
