@@ -8,7 +8,7 @@ jobs:
     steps:
         - run: 
             name: Install required dependencies
-            command: sudo apt-get install libapr1-dev openjdk-8-jdk libssl-dev -y
+            command: sudo apt-get install libapr1-dev libssl-dev -y
         - checkout
         - run:
             name: Install fpm-cookery
