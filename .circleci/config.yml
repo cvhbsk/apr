@@ -5,7 +5,7 @@ jobs:
         - image: circleci/ruby:2.4.1-node-browsers
 
     steps:
-        - run: apt-get install -y sudo
+        - run: apt-get install libapr1-dev openjdk-8-jdk libssl-dev
         - checkout
         - run:
             name: Install fpm-cookery
