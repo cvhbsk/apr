@@ -12,7 +12,7 @@ jobs:
         - checkout
         - run:
             name: Install fpm-cookery
-            command: gem install fpm-cookery
+            command: gem install ffi fpm-cookery
         - run:
             name: Install build dependencies
             command: sudo fpm-cook install-deps
