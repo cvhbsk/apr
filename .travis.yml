@@ -2,7 +2,9 @@ language: ruby
 
 sudo: enabled
 
-install:
+before_install:
     - gem install fpm-cookery
-    - fpm-cook install-deps
+    - sudo fpm-cook install-deps
+
+install:
     - fpm-cook
