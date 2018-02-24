@@ -1,6 +1,6 @@
 language: ruby
 
-sudo: enabled
+sudo: required
 
 before_install:
     - gem install fpm-cookery
