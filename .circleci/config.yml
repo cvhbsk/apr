@@ -4,15 +4,15 @@ jobs:
     machine:
        - circleci/classic:latest
 
-    steps:
+#    steps:
 #      - checkout
-
-      - run:
-          name: install fpm-cookery
-          command: |
-            gem install fpm-cookery
-            sudo fdisk -l
-
+#
+#      - run:
+#          name: install fpm-cookery
+#          command: |
+#            gem install fpm-cookery
+#            sudo fdisk -l
+#
 #      # collect reports
 #      - store_test_results:
 #          path: /tmp/test-results
