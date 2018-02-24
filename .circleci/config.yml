@@ -6,7 +6,9 @@ jobs:
         - image: cvhbsk/ubuntu-custom        
 
     steps:
-        - run: apt-get install libapr1-dev openjdk-8-jdk libssl-dev -y
+        - run: 
+            name: Install required dependencies
+            command: sudo apt-get install libapr1-dev openjdk-8-jdk libssl-dev -y
         - checkout
         - run:
             name: Install fpm-cookery
