@@ -8,7 +8,7 @@ jobs:
     steps:
         - run: 
             name: Install required dependencies
-            command: apt update && apt-get install git ruby libffi-dev make -y
+            command: apt update && apt-get install git ruby ruby-dev libffi-dev make gcc -y
         - checkout
         - run:
             name: Install fpm-cookery
